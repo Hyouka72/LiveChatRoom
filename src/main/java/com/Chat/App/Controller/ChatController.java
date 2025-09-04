@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ChatController {
 
     @MessageMapping("/sendMessage") //websocket message to destination
-    @SendTo("/topic/messages")
+    @SendTo("/topic/messages") // sending the message to room
     public ChatMessage sendMessage(ChatMessage message){
         return message;
     }
