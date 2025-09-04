@@ -16,7 +16,7 @@ public class ChatController {
     }
 
     //this for the thymeleaf
-    @GetMapping
+    @GetMapping("/chat")
     public String chat(){
         return "chat";
     }
